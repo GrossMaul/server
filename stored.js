@@ -15,6 +15,7 @@ function updateBlock(pos,id){
 }
 
 function joinPlayer(name){
+    console.log(`${name} joined the game`)
     Players.set(name,new Pos(0,0,0))
 }
 
@@ -23,6 +24,7 @@ function movePlayer(name,pos){
 }
 
 function leavePlayer(name){
+    console.log(`${name} left the game`)
     Players.delete(name)
 }
 
